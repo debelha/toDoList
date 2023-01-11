@@ -20,14 +20,14 @@
 
 </head>
 <body>
-    <div class="todo-container">
+    <div class="toDo-container">
     <header>
         <h1>TO DO LIST</h1>
     </header>
-    <form id="todo-form">
+    <form id="toDo-form">
         <p>Add your task:</p>
         <div class="form-contol">
-            <input type="text" id="todo-input" placeholder="What do you have to do?">
+            <input type="text" id="toDo-input" placeholder="What do you have to do?">
             <button type="submit">
                 <i class="fa-thin fa-plus"></i>
             </button>
@@ -41,6 +41,7 @@
                 <i class="fa-solid fa-check-double"></i>
             </button>
         </div>
+        <button id="cancel-edit-btn">Cancel</button>
     </form>
     <div id="toolbar">
         <div id="search">
@@ -52,6 +53,44 @@
                  </button>
             </form>
         </div>
+        <div id="filter">
+            <h4>Filter:</h4>
+            <select id="filter-select">
+                <option value="all">All</option>
+                <option value="done">Done</option>
+                <option value="toDo">To do</option>
+            </select>
+        </div>
+
+        <div id="toDo-list">
+            <div class="toDo">
+                <h3>I am doing something...</h3>
+                <button class="finish-toDo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-toDo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-toDo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="toDo">
+                <h3>To study JavaScript</h3>
+                <button class="finish-toDo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-toDo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-toDo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+        </div>
+
     </div>
     </div>
 </body>
