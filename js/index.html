@@ -20,7 +20,38 @@
 
 </head>
 <body>
-    <H1>TO DO LIST</H1>
+    <div class="todo-container">
+    <header>
+        <h1>TO DO LIST</h1>
+    </header>
+    <form id="todo-form">
+        <p>Add your task:</p>
+        <div class="form-contol">
+            <input type="text" id="todo-input" placeholder="What do you have to do?">
+            <button type="submit">
+                <i class="fa-thin fa-plus"></i>
+            </button>
+        </div>
+    </form>
+    <form id="edit-form">
+        <p>Edit your task</p>
+        <div class="form-control"> 
+            <input type="text" id="edit-input">
+            <button type="submit">
+                <i class="fa-solid fa-check-double"></i>
+            </button>
+        </div>
+    </form>
+    <div id="toolbar">
+        <div id="search">
+            <h4>Search</h4>
+            <form>
+                <input type="text" id="search-input" placeholder="Search">
+                <button id="erase-button"></button>
+            </form>
+        </div>
+    </div>
+    </div>
 </body>
 </html>
 <!--  -->
