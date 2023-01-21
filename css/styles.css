@@ -1,4 +1,5 @@
-/* Geral */
+/* General */
+
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +9,20 @@
 }
 
 body {
-    background-image: url("https://imgur.com/DRHuaBR");
+    background-image: url("../img/BG.jpg");
     background-position: center;
     background-size: cover;
+}
+
+button{
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
 }
