@@ -59,7 +59,7 @@ select {
     border-radius: 15px;
 }
 
-.toDo-conainer header {
+.toDo-container header {
     text-align: center;
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #ccc;
@@ -76,10 +76,91 @@ select {
     display: flex;
 }
 
-form-control input {
+.form-control input {
     margin-right: 0.3rem;
 }
 
 #cancel-edit-btn {
     margin-top: 1rem;
 }
+
+/* Tool bar */
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: 0.5rem;
+}
+
+#search {
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100; 
+    margin-right: 0.3rem; 
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+/* List */
+#toDo-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.toDo-list h3 {
+    flex: 1;
+    font: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

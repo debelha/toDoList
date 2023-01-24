@@ -22,21 +22,25 @@
 <body>
     <div class="toDo-container">
     <header>
-        <h1>TO DO LIST</h1>
+    <h1>TO DO LIST</h1>
     </header>
     <form id="toDo-form">
-        <p>Add your task:</p>
-        <div class="form-contol">
-            <input type="text" id="toDo-input" placeholder="What do you have to do?">
+        <p>Add your task</p>
+        <div class="form-control">
+            <input
+             type="text" 
+             id="toDo-input" 
+             placeholder="What do you have to do?"
+             />
             <button type="submit">
                 <i class="fa-thin fa-plus"></i>
             </button>
         </div>
     </form>
-    <form id="edit-form" class="">
+    <form id="edit-form" class="hide">
         <p>Edit your task</p>
         <div class="form-control"> 
-            <input type="text" id="edit-input">
+            <input type="text" id="edit-input"/>
             <button type="submit">
                 <i class="fa-solid fa-check-double"></i>
             </button>
@@ -47,7 +51,7 @@
         <div id="search">
             <h4>Search</h4>
             <form>
-                <input type="text" id="search-input" placeholder="Search">
+                <input type="text" id="search-input" placeholder="Search...">
                 <button id="erase-button"> 
                  <i class="fa-solid fa-delete-left"></i> 
                  </button>
@@ -61,6 +65,7 @@
                 <option value="toDo">To do</option>
             </select>
         </div>
+    </div>
 
         <div id="toDo-list">
             <div class="toDo">
