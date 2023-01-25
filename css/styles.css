@@ -144,6 +144,15 @@ select {
     font: 0.9rem;
 }
 
+.toDo button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
 
 
 
