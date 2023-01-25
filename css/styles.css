@@ -68,6 +68,12 @@ select {
 /* Form */
 #toDo-form, 
 #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#toDo-form p, 
+#edit-form p {
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
@@ -124,7 +130,7 @@ select {
 }
 
 /* List */
-#toDo-list {
+.toDo {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -133,7 +139,7 @@ select {
     transition: 0.3s;
 }
 
-.toDo-list h3 {
+.toDo h3 {
     flex: 1;
     font: 0.9rem;
 }
