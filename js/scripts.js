@@ -16,7 +16,9 @@ const saveToDo = (text) => {
     toDoTitle.innerText = text;
     toDo.appendChild(toDoTitle);
 
-    console.log(toDo);
+    const doneBtn = document.createElement("button");
+    doneBtn.classList.add("finish-toDo");
+    doneBtn.innerHTML = ''
 
 };
 
