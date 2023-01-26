@@ -7,10 +7,27 @@ const editInput = document.querySelector("#edit-input");
 const cancelEditBtn = document.querySelector("#cancel-edit-btn");
 
 // Functions
+const saveToDo = (text) => {
+
+    const toDo = document.createElement("div");
+    toDo.classList.add("toDo");
+
+    const toDoTitle = document.createElement("h3");
+    toDoTitle.innerText = text;
+    toDo.appendChild(toDoTitle);
+
+    console.log(toDo);
+
+};
 
 // Events 
 toDoForm.addEventListener("submit", (e) =>  {
     e.preventDefault();
 
-    console.log("Sent");
+  const inputValue = toDoInput.value;
+
+  if (inputValue) {
+    saveToDo(inputValue);
+  }
+
 });
