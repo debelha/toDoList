@@ -49,3 +49,16 @@ toDoForm.addEventListener("submit", (e) =>  {
   }
 });
 
+document.addEventListener("click", (e) => {
+    const targetEl = e.target;
+    const parentEl = targetEl.closest("div");
+    
+    if (targetEl.classList.contains("finish-toDo")) {
+        parentEl.classList.toggle("done");
+    }
+
+    if(targetEl.classList.contains("remove-toDo")) {
+        parentEl.remove();
+    }
+
+    });
