@@ -18,7 +18,23 @@ const saveToDo = (text) => {
 
     const doneBtn = document.createElement("button");
     doneBtn.classList.add("finish-toDo");
-    doneBtn.innerHTML = ''
+    doneBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
+    toDo.appendChild(doneBtn);
+
+    const editBtn = document.createElement("button");
+    editBtn.classList.add("edit-toDo");
+    editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
+    toDo.appendChild(editBtn);
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.classList.add("remove-toDo");
+    deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    toDo.appendChild(deleteBtn);
+    
+    toDoList.appendChild(toDo);
+
+    toDoInput.value = "";
+    toDoInput.focus();
 
 };
 
@@ -31,5 +47,5 @@ toDoForm.addEventListener("submit", (e) =>  {
   if (inputValue) {
     saveToDo(inputValue);
   }
-
 });
+
